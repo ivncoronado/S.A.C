@@ -58,7 +58,6 @@ public class Principal {
                     listarCitas();
                     break;
                 case 0:
-                    guardarDatos();
                     break;
                 default:
                     System.out.println("Opción inválida. Por favor, seleccione una opción válida.");
@@ -140,9 +139,7 @@ public class Principal {
     private void altaDoctor() {
         System.out.println("Ingrese los datos del doctor.");
 
-        System.out.print("Identificador único: ");
-        int id = scanner.nextInt();
-        scanner.nextLine();
+        int id = generarNuevoIdDoctor(); // Generar nuevo identificador único
 
         System.out.print("Nombre completo: ");
         String nombre = scanner.nextLine();
@@ -153,14 +150,21 @@ public class Principal {
         Doctor doctor = new Doctor(id, nombre, especialidad);
         doctores.add(doctor);
         System.out.println("Doctor registrado exitosamente.");
+        guardarDoctores();
+    }
+    private int generarNuevoIdDoctor() {
+        if (doctores.isEmpty()) {
+            return 1;
+        } else {
+            int ultimoId = doctores.get(doctores.size() - 1).getId();
+            return ultimoId + 1;
+        }
     }
 
     private void altaPaciente() {
         System.out.println("Ingrese los datos del paciente.");
 
-        System.out.print("Identificador único: ");
-        int id = scanner.nextInt();
-        scanner.nextLine();
+        int id = generarNuevoIdPaciente();
 
         System.out.print("Nombre completo: ");
         String nombre = scanner.nextLine();
@@ -168,14 +172,20 @@ public class Principal {
         Paciente paciente = new Paciente(id, nombre);
         pacientes.add(paciente);
         System.out.println("Paciente registrado exitosamente.");
+        guardarPacientes();
     }
-
+    private int generarNuevoIdPaciente() {
+        if (pacientes.isEmpty()) {
+            return 1;
+        } else {
+            int ultimoId = pacientes.get(pacientes.size() - 1).getId();
+            return ultimoId + 1;
+        }
+    }
     private void crearCita() {
         System.out.println("Ingrese los datos de la cita.");
 
-        System.out.print("Identificador único: ");
-        int id = scanner.nextInt();
-        scanner.nextLine();
+        int id = generarNuevoIdCrearCita();
 
         System.out.print("Fecha y hora (dd/mm/aaaa hh:mm): ");
         String fechaHora = scanner.nextLine();
@@ -200,6 +210,15 @@ public class Principal {
         Cita cita = new Cita(id, fechaHora, motivo, doctorId, pacienteId);
         citas.add(cita);
         System.out.println("Cita creada exitosamente.");
+        guardarCitas();
+    }
+    private int generarNuevoIdCrearCita() {
+        if (citas.isEmpty()) {
+            return 1;
+        } else {
+            int ultimoId = citas.get(citas.size() - 1).getId();
+            return ultimoId + 1;
+        }
     }
 
     private void listarCitas() {
@@ -220,12 +239,6 @@ public class Principal {
         for (Paciente paciente : pacientes) {
             System.out.println(paciente);
         }
-    }
-
-    private void guardarDatos() {
-        guardarDoctores();
-        guardarPacientes();
-        guardarCitas();
     }
 
     private void guardarDoctores() {

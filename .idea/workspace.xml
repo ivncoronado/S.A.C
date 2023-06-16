@@ -4,9 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="66238e00-726a-4708-893e-3f2a1d4980c6" name="Changes" comment="subo la aplicacion citas clinicas">
+    <list default="true" id="66238e00-726a-4708-893e-3f2a1d4980c6" name="Changes" comment="se modifico el metodo alta doctor para que el id se incremente en automatico y sea unico&#10;se creo el metodo generar nuevoiddoctor para lo del id o identificador automatico&#10;se realizo lo mismo con alta paciente, se creo metodo generarnuevoidpacieinte&#10;se realizo lo mismo con alta cita, se creo metodo generarnuevoidcrearcita&#10;se elimino guardar los datos de doctor,paciente y cita que lo que hacia era guardar los datos al salir y se incluyeron para que guarde al termino de la alta en automatico">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Principal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Principal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/citas.csv" beforeDir="false" afterPath="$PROJECT_DIR$/citas.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doctores.csv" beforeDir="false" afterPath="$PROJECT_DIR$/doctores.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pacientes.csv" beforeDir="false" afterPath="$PROJECT_DIR$/pacientes.csv" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,7 +66,14 @@
       <option name="project" value="LOCAL" />
       <updated>1686950469114</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="se modifico el metodo alta doctor para que el id se incremente en automatico y sea unico&#10;se creo el metodo generar nuevoiddoctor para lo del id o identificador automatico&#10;se realizo lo mismo con alta paciente, se creo metodo generarnuevoidpacieinte&#10;se realizo lo mismo con alta cita, se creo metodo generarnuevoidcrearcita&#10;se elimino guardar los datos de doctor,paciente y cita que lo que hacia era guardar los datos al salir y se incluyeron para que guarde al termino de la alta en automatico">
+      <created>1686953846197</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1686953846197</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -80,6 +89,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="subo la aplicacion citas clinicas" />
-    <option name="LAST_COMMIT_MESSAGE" value="subo la aplicacion citas clinicas" />
+    <MESSAGE value="se modifico el metodo alta doctor para que el id se incremente en automatico y sea unico&#10;se creo el metodo generar nuevoiddoctor para lo del id o identificador automatico&#10;se realizo lo mismo con alta paciente, se creo metodo generarnuevoidpacieinte&#10;se realizo lo mismo con alta cita, se creo metodo generarnuevoidcrearcita&#10;se elimino guardar los datos de doctor,paciente y cita que lo que hacia era guardar los datos al salir y se incluyeron para que guarde al termino de la alta en automatico" />
+    <option name="LAST_COMMIT_MESSAGE" value="se modifico el metodo alta doctor para que el id se incremente en automatico y sea unico&#10;se creo el metodo generar nuevoiddoctor para lo del id o identificador automatico&#10;se realizo lo mismo con alta paciente, se creo metodo generarnuevoidpacieinte&#10;se realizo lo mismo con alta cita, se creo metodo generarnuevoidcrearcita&#10;se elimino guardar los datos de doctor,paciente y cita que lo que hacia era guardar los datos al salir y se incluyeron para que guarde al termino de la alta en automatico" />
   </component>
 </project>

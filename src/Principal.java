@@ -3,14 +3,18 @@ import java.io.BufferedWriter;
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
 public class Principal {
-    private static final String DOCTORES_FILE = "doctores.csv";
-    private static final String PACIENTES_FILE = "pacientes.csv";
-    private static final String CITAS_FILE = "citas.csv";
+    private static final String DB_FOLDER = "db/";
+    private static final String DOCTORES_FILE = DB_FOLDER + "doctores.csv";
+    private static final String PACIENTES_FILE = DB_FOLDER + "pacientes.csv";
+    private static final String CITAS_FILE = DB_FOLDER + "citas.csv";
     private static final String ADMIN_USERNAME = "admin";
     private static final String ADMIN_PASSWORD = "admin123";
 
@@ -24,12 +28,23 @@ public class Principal {
         pacientes = new ArrayList<>();
         citas = new ArrayList<>();
         scanner = new Scanner(System.in);
+        crearCarpetaDBSiNoExiste();
     }
+    private void crearCarpetaDBSiNoExiste() {
+        Path dbFolderPath = Paths.get(DB_FOLDER);
+        if (!Files.exists(dbFolderPath)) {
+            try {
+                Files.createDirectories(dbFolderPath);
+            } catch (IOException e) {
+                System.out.println("Error al crear la carpeta 'db': " + e.getMessage());
+            }
+        }
+    }
+
 
     public void ejecutar() {
         System.out.println("Bienvenido al sistema de administración de citas del consultorio clínico.");
 
-        // Autenticación del administrador
         if (!autenticarAdministrador()) {
             System.out.println("Credenciales de administrador incorrectas. Intenta de nuevo.");
             ejecutar();
@@ -274,6 +289,7 @@ public class Principal {
             System.out.println("Error al guardar las citas: " + e.getMessage());
         }
     }
+
 
     private void mostrarMenu() {
         System.out.println();

@@ -4,11 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="66238e00-726a-4708-893e-3f2a1d4980c6" name="Changes" comment="se modifico el metodo alta doctor para que el id se incremente en automatico y sea unico&#10;se creo el metodo generar nuevoiddoctor para lo del id o identificador automatico&#10;se realizo lo mismo con alta paciente, se creo metodo generarnuevoidpacieinte&#10;se realizo lo mismo con alta cita, se creo metodo generarnuevoidcrearcita&#10;se elimino guardar los datos de doctor,paciente y cita que lo que hacia era guardar los datos al salir y se incluyeron para que guarde al termino de la alta en automatico">
+    <list default="true" id="66238e00-726a-4708-893e-3f2a1d4980c6" name="Changes" comment="se agregan archivos donde se corrieron las pruebas">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/citas.csv" beforeDir="false" afterPath="$PROJECT_DIR$/citas.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/doctores.csv" beforeDir="false" afterPath="$PROJECT_DIR$/doctores.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pacientes.csv" beforeDir="false" afterPath="$PROJECT_DIR$/pacientes.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/citas.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/doctores.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pacientes.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Principal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Principal.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,13 +37,13 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "C:/Users/FMS/Documents/Proyectos java/S.A.C"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/FMS/Documents/Proyectos java/S.A.C&quot;
   }
-}]]></component>
+}</component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -73,7 +74,14 @@
       <option name="project" value="LOCAL" />
       <updated>1686953846197</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="se agregan archivos donde se corrieron las pruebas">
+      <created>1686954260400</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1686954260400</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -90,6 +98,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="subo la aplicacion citas clinicas" />
     <MESSAGE value="se modifico el metodo alta doctor para que el id se incremente en automatico y sea unico&#10;se creo el metodo generar nuevoiddoctor para lo del id o identificador automatico&#10;se realizo lo mismo con alta paciente, se creo metodo generarnuevoidpacieinte&#10;se realizo lo mismo con alta cita, se creo metodo generarnuevoidcrearcita&#10;se elimino guardar los datos de doctor,paciente y cita que lo que hacia era guardar los datos al salir y se incluyeron para que guarde al termino de la alta en automatico" />
-    <option name="LAST_COMMIT_MESSAGE" value="se modifico el metodo alta doctor para que el id se incremente en automatico y sea unico&#10;se creo el metodo generar nuevoiddoctor para lo del id o identificador automatico&#10;se realizo lo mismo con alta paciente, se creo metodo generarnuevoidpacieinte&#10;se realizo lo mismo con alta cita, se creo metodo generarnuevoidcrearcita&#10;se elimino guardar los datos de doctor,paciente y cita que lo que hacia era guardar los datos al salir y se incluyeron para que guarde al termino de la alta en automatico" />
+    <MESSAGE value="se agregan archivos donde se corrieron las pruebas" />
+    <option name="LAST_COMMIT_MESSAGE" value="se agregan archivos donde se corrieron las pruebas" />
   </component>
 </project>
